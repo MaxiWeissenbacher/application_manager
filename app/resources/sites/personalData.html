@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persönliche Daten</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="main_heading"><a href="/app/index.html">Bewerbungsmanager<br>Zur Startseite</a></h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a id="nav1"href="/app/resources/sites/personalDataStartPage.html">Persönliche Daten</a></li>
+                <li><a id="nav2"href="/app/resources/sites/coverLetter.html">Lebenslauf</a></li>
+                <li><a id="nav3"href="/app/resources/sites/coverLetter.html#top1">Bewerbungsschreiben</a></li>
+                <li><b id="google">Sign in</b></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 class="app-description">Du hast noch keine Daten eingegeben!</h3> 
+        <span>Gib hier deine Daten ein, die für die Erstellung der Dokumente verwendet werden.</span>
+        <div class="container">
+            <form id="formular" action="#">
+                <fieldset id="fieldset" enabled>
+            <span class="title" style="font-size: 18px;">Foto hochladen</span>
+            <div class="input-box" id="photoUpload" >
+                <i id="person" class="bi bi-person-square" style="font-size: 150px;"></i>
+                <img id="myimg"><label id="upProgress"></label>
+                <div></div>
+                <button id="select" type="button">Foto auswählen</button>
+                <button id="upload" type="button">Foto speichern</button>
+            </div>
+            <div class="title" id="personal">Über mich<i class="arrow1 right" style="  transform: rotate(-45deg);"></i></div>
+                <div class="user-details" id="personal1"  style="display: none;">
+                    <div class="input-box">
+                        <span class="details">Nachname</span>
+                        <input type="text" placeholder="Namen eingeben" id="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Vorname</span>
+                        <input type="text" placeholder="Vornamen eingeben" id="prename" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Geburtsdatum</span>
+                        <input type="date" placeholder="DD/MM/YYYY" id="birthday">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Geburtsort</span>
+                        <input type="text" placeholder="Geburtsort eingeben" id="birthplace">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Email Adresse eingeben" id="email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Telefonnummer</span>
+                        <input type="text" placeholder="Telefonnummer eingeben" id="phone">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Geschlecht</span>
+                        <label>
+                            <input list="genderList" name="genderList" id="gender" placeholder="Geschlecht auswählen">
+                        </label>
+                            <datalist id="genderList">
+                              <option value="Weiblich"></option>
+                              <option value="Männlich"></option>
+                              <option value="Divers"></option>
+                            </datalist>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Adresse</span>
+                        <input type="text" placeholder="Straße" id="street" class="address" style="width: 33%;">
+                        <input type="text" placeholder="Ort" id="residence" class="address" style="width: 20%;">
+                        <input type="text" placeholder="Postleitzahl" id="postal" class="address" style="width: 20%;">
+                    </div>
+
+
+                </div>
+            
+
+            <!-- UNI/ AUSBILDUNGS FORMULAR:-->
+            <div class="title" id="ausbildung">Akademische Ausbildung<i class="arrow2 right"></i></div>
+            
+                <div class="user-details" id="ausbildung1" style="display: none;">
+                    <div class="input-box">
+                        <span class="details">Universität</span>
+                        <input type="text" placeholder="Universität eingeben" id="uni">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Studienfach</span>
+                        <input type="text" placeholder="Studienfach eingeben" id="subject">
+                    </div>
+                    <div class="input-box">
+                        <label>Angestrebter Abschluss:
+                            <input list="degreeList" name="degreeList" id="degree" placeholder="Bitte auswählen">
+                        </label>
+                            <datalist id="degreeList">
+                              <option value="B.A."></option> 
+                              <option value="B.Sc."></option> 
+                              <option value="B.Eng."></option> 
+                              <option value="M.A."></option> 
+                              <option value="M.Sc."></option> 
+                              <option value="M.Eng."></option> 
+                              <option value="Dipl."></option> 
+                              <option value="Dr."></option>                              
+                            </datalist>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Aktuelles Semester</span>
+                        <input type="text" placeholder="Semester eingeben" id="semester">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">(Voraussichtliches) Abschlussjahr</span>
+                        <input type="date" placeholder="Abschlussjahr eingeben" id="grad-date">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">(Voraussichtliche) Note</span>
+                        <input type="text" placeholder="Note eingeben" id="grade">
+                    </div>
+                </div>
+
+            <!-- Skills FORMULAR:-->
+            <div class="title" id="skills">Interessen & Fähigkeiten<i class="arrow3 right"></i></div>
+            
+            <div class="user-details" id="skills1" style="display: none;">
+                <div class="input-box">
+                    <span class="details">Stärken</span>
+                    <input type="text" placeholder="Stärken, z.B. 'Kommunikativ'" id="strenghts">
+                    <div class="buttonTest" id="strenghtsButton">
+                        <button type="button" class="add-more" id="add-more-strenghts">+ Weitere hinzufügen (Max. 3)</button>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Technische Fähigkeiten</span>
+                    <input type="text" placeholder="Technische Fähigkeiten, z.B. 'JavaScript'" id="tech">
+                    <div class="buttonTest" id="techButton">
+                        <button type="button" class="add-more" id="add-more-tech">+ Weitere hinzufügen (Max. 3)</button>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Sprachen</span>
+                    <input type="text" placeholder="z.B. Englisch A1" id="languages">
+                    <div class="buttonTest" id="languagesButton">
+                        <button type="button" class="add-more" id="add-more-languages">+ Weitere hinzufügen (Max. 3)</button>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Fachliche Interessen</span>
+                    <input type="text" placeholder="z.B. Data Science" id="interests">
+                    <div class="buttonTest" id="interestsButton">
+                        <button type="button" class="add-more" id="add-more-interests">+ Weitere hinzufügen (Max. 3)</button>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Hobbies</span>
+                    <input type="text" placeholder="z.B. Fußball" id="hobbies">
+                    <div class="buttonTest" id="hobbiesButton">
+                        <button type="button" class="add-more" id="add-more-hobbies">+ Weitere hinzufügen (Max. 3)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Erfahrungs FORMULAR:-->
+            <div class="title" id="jobExperience">Berufserfahrung<i class="arrow4 right"></i></div>
+            <div id="berufserfahrung">
+                <div class="user-details" id="jobExperience1" style="display: none;">
+                    <div class="experience">
+                        <div class="input-box">
+                            <span class="details">Beruf</span>
+                            <input type="text" placeholder="Arbeitgeber" id="employer" class="address">
+                            <input type="text" placeholder="Jobtitel" id="jobtitle" class="address">
+                            <input type="text" placeholder="Dauer in Monaten" id="duration" class="address">
+                        </div>
+                        
+                            <button type="button" class="add-more" id="expButton">+ Weitere hinzufügen (Max. 3)</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="button" id="submitForm">
+                   <input type="submit" value="Speichern">
+            </div>
+            <div class="alert">Die Daten wurden erfolgreich gespeichert!</div>
+        </fieldset>
+            </form>
+            <a href="dataOverview.html"><button id="submitForm" class="Update">Gespeicherte Daten ansehen</button></a>
+        </div>
+
+
+    </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+    <script type="module" src="../js/firebaseConnection.js"></script>
+    <script type="module" src="../js/personalData/clapOutForm.js"></script>
+    <script type="module" src="../js/personalData/addMoreButtonHandling.js"></script>
+    <script type="module" src="../js/personalData/SaveFormData.js"></script>
+    <script type="module" src="../js/GoogleSignIn.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.22.5/docxtemplater.js"></script>
+    <script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip-utils.js"></script>
+    <script type="module" src="../js/utils/cv.js"></script>
+    <script type="module" src="../js/createWord.js"></script> 
+    <script src="../js/template.js"></script>
+</body>
+
+</html>

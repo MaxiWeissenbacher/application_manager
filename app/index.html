@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MME Bewerbungsmanager</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />        
+        <link rel="stylesheet" href="/app/resources/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="main_heading"><a href="../app/index.html">Bewerbungsmanager</a></h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a id="nav1"href="/app/resources/sites/personalDataStartPage.html">Persönliche Daten</a></li>
+                    <li><a id="nav2"href="/app/resources/sites/coverLetter.html">Lebenslauf</a></li>
+                    <li><a id="nav3"href="/app/resources/sites/coverLetter.html#top1">Bewerbungsschreiben</a></li>
+                    <li><b id="google">Sign in</b></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="top">
+                <h2>Der MME Bewerbungsmanager</h2>
+                <h3>Schnell und einfach Bewerbungen erstellen!</h3>
+                <section class="features-icons bg-light text-center">
+                    <div class="icons">
+                        <div class="mydata">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-menu-down"></i></div>
+                            <h3>1. Daten eingeben</h3>
+                            <p class="lead mb-0">Speichere und Update Deine Daten.<br>Außerdem kannst du deine Daten komplett löschen!</p>
+                        </div>
+                        <div class="mydocs">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-file-earmark-person"></i></div>
+                            <h3>2. Lebenslauf erstellen</h3>
+                            <p class="lead mb-0">Erstelle automatisiert deinen Lebenslauf anhand deiner Daten.<br>Wähle zwischen verschiedenen Templates!</p>
+                        </div>
+                        <div class="verwaltung">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-folder-check"></i></div>
+                            <h3>3. Bewerbungsschreiben erstellen</h3>
+                            <p class="lead mb-0">Erstelle automatisiert dein Bewerbungsschreiben. <br>Wähle aus, wie formell das Schreiben sein soll.</p>
+                        </div>
+                    </div>
+                </section>
+            <div class="middle">
+                <ul class="buttons">
+                    <a href="/app/resources/sites/personalDataStartPage.html" class="btn btn1"><b>Persönliche Daten</b></a>
+                    <a href="/app/resources/sites/coverLetter.html" class="btn btn1"><b>Lebenslauf</b></a>
+                    <a href="/app/resources/sites/coverLetter.html#top1" class="btn btn1"><b>Bewerbungsschreiben</b></a>
+                </ul>
+            </div>
+        </main>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script type="module" src="resources/js/firebaseConnection.js"></script>
+        <script type="module" src="resources/js/index.js"></script>
+        <script type="module" src="resources/js/GoogleSignIn.js"></script>
+    </body>
+
+</html>

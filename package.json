@@ -1,0 +1,38 @@
+{
+  "name": "projekt-starter-mme-ws20",
+  "version": "1.0.0",
+  "description": "Startercode für die Abschlussprojekte des MME-Kurses im Wintersemester 2021",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js ./app 8000",
+    "prestart": "npm run build",
+    "prebuild": "npm install && npm run check",
+    "build": "node build.js",
+    "check": "eslint app/resources/js/",
+    "deploy": "forever index.js ./app 9901",
+    "predeploy": "npm run build"
+  },
+  "author": "Alexander Bazo <alexander.bazo@ur.de>",
+  "license": "MIT",
+  "dependencies": {
+    "docxtemplater-image-module": "^3.1.0",
+    "docxtemplater-image-module-free": "^1.1.1",
+    "eslint": "^7.18.0",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Multimedia-Engineering-Regensburg-Tasks/mme-ss2021-projekte-bewerbungsmanager-chrisvincentannamax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Multimedia-Engineering-Regensburg-Tasks/mme-ss2021-projekte-bewerbungsmanager-chrisvincentannamax/issues"
+  },
+  "homepage": "https://github.com/Multimedia-Engineering-Regensburg-Tasks/mme-ss2021-projekte-bewerbungsmanager-chrisvincentannamax#readme"
+}

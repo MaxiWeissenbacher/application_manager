@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persönliche Daten</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body style="background-color:black;">
+    <header>
+        <h1 class="main_heading"><a href="/app/index.html">Bewerbungsmanager<br>Zur Startseite</a></h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a id="nav1"href="/app/resources/sites/personalDataStartPage.html">Persönliche Daten</a></li>
+                <li><a id="nav2"href="/app/resources/sites/coverLetter.html">Lebenslauf</a></li>
+                <li><a id="nav3"href="/app/resources/sites/coverLetter.html#top1">Bewerbungsschreiben</a></li>
+                <li><b id="google">Sign in</b></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="flex-container">
+
+            <div class="flex">
+              Du hast noch keine Daten eingegeben? Dann klicke hier! <br> (Initiale Eingabe der Daten + Speichern)
+              <p style="background-color:#F8F8FF;;font-size:200%;">Bitte rechts oben anmelden, um Daten eingeben zu können!</p>
+            </div>
+    </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="../js/firebaseConnection.js"></script>
+    <script type="module" src="../js/GoogleSignIn.js"></script>
+    <script type="module" src="../js/personalData/userCheck.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+html {
+    margin: 0;
+    background: #F8F8FF;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+}
+
+html,body {
+  height:100%;
+  min-height:100%;
+  max-height:100%;
+}
+
+body div {
+    padding: 1vw;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 2%;
+  background-color: #24252a;
+}
+
+main {
+  text-align: center;
+  padding: 10px;
+}
+
+.main_heading {
+  margin-right: auto;
+}
+
+h1 a{
+  color:#FAFAFA;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links a {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+  display: none;
+}
+
+.nav_links b {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #FAFAFA;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_links li a:hover {
+    color: #ff7675;
+}
+
+.app-description {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: block;
+    width: 80vw;
+    margin: 1vh auto;
+    font-size: 1.15em;
+    line-height: 1.25em;
+    text-align: center;
+    color: var(--timberwolf);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.middle{
+  position: inherit;
+  margin: 0 auto;
+  width: 30%;
+  left: 33%; 
+}
+
+.middle img{
+  width: 15vw;
+}
+
+.top .icons {
+  display: inline-flex;
+}
+
+.mydata div {
+  font-size: 70px;
+}
+
+.mydocs div {
+  font-size: 70px;
+}
+
+.verwaltung div {
+  font-size: 70px;
+}
+
+
+/* ########################################################################*/
+/* Buttons of the start site */
+.btn1{
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 18px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+  margin: 25px 0;
+  border: 2px solid #ff7675;
+  border-radius: 5px;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  font-style: normal;
+}
+
+.btn1::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+  
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+  
+.btn1:hover::before{
+  width: 100%;
+}
+
+.btn2{
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 18px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+  margin: 25px 0;
+  border: 2px solid #ff7675;
+  border-radius: 5px;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  font-style: normal;
+}
+
+.btn2::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+  
+.btn2::before{
+  width: 0%;
+  height: 100%;
+}
+  
+.btn2:hover::before{
+  width: 100%;
+}
+  
+.btn2::before{
+  width: 100%;
+  height: 0%;
+}
+
+.btn2:hover::before{
+  height: 100%;
+}
+
+/* ########################################################################*/
+/* CSS für die Sub-Seiten */
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.job-area {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.input-data {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+
+}
+.input-data label {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  color: #666;
+}
+.input-data input {
+  padding: .5em;
+}
+/* ########################################################################*/
+/* Start Page of Personal Data */ 
+
+.flex-container {
+  display: block;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  z-index: 15;
+  top: 50%;
+  left: 45%;
+  margin: -100px 0 0 -150px;
+}
+
+.flex-child {
+  width: 400px;
+  text-align: center;
+  flex: 1;
+  border: 2px solid #edf0f1;
+  color: #edf0f1;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+/* ########################################################################*/
+/* Input Form */
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  padding-left: 20%;
+  padding: 25px 30px;
+  border-radius: none;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+.arrow1 {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+
+.arrow2, .arrow3, .arrow4 {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.container .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #747272;
+}
+
+.container form .user-details {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form .user-details .input-box {
+  margin: 20px 0 12px 0;
+  width: calc(100%/2-10px);
+}
+
+form .user-details .input-box#photoUpload {
+  width: 85%;
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+}
+
+.jobtype {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+}
+
+#headings {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.user-details .input-box input:focus{
+  border-color: #ff7675;
+}
+
+#names input{
+  margin-bottom: 10px;
+}
+
+.fieldsetclass {
+  display: initial;
+}
+
+.jobtype:focus{
+  border-color: #ff7675;
+}
+
+#container1 {
+  padding: 0px 0px;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .address {
+  margin-bottom: 5px;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #F8F8FF;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid red;
+}
+
+.formclass {
+  background: #F8F8FF;
+}
+
+.container button {
+  color: black;
+  outline: none;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: white;
+  transition: 1s all ease;
+  margin: 20px;
+  border: 2px solid red;
+}
+
+form .button input:hover {
+  background: #FF7675;
+  color: white;
+}
+
+.container button:hover {
+  background: #FF7675;
+  color: white;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+@media (max-width: 584px) {
+  .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender-details .category{
+    width: 100%;
+  }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 0;
+  }
+
+}
+
+/* ########################################################################*/
+
+/* CSS für Template-Auswahl */
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: grey;
+  width: fit-content;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 70vw;
+  height: 90vh;
+  font-size: 20px;
+  overflow-y: scroll;
+}
+
+.popup img:hover{
+  cursor: pointer;
+}
+
+.popup img{
+  width: 25vw;
+  margin: 16px;
+}
+
+.popup img.active-cv{
+   border: 4px solid green;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup .close-btn:hover{
+  cursor: pointer;
+}
+
+.popup.active .overlay{
+  display: block;
+}
+
+.popup .content img{
+  height: 65vh
+}
+
+.popup.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+.ausbildung {
+  display: none;
+}
+
+.middle img{
+  height: 45vh;
+}
+
+/* ########################################################################*/

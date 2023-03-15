@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbungsschreiben</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="main_heading"><a href="/app/index.html">Bewerbungsmanager<br>Zur Startseite</a></h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a id="nav1"href="/app/resources/sites/personalDataStartPage.html">Persönliche Daten</a></li>
+                <li><a id="nav2"href="/app/resources/sites/coverLetter.html">Lebenslauf</a></li>
+                <li><a id="nav3"href="/app/resources/sites/coverLetter.html#top1">Bewerbungsschreiben</a></li>
+                <li><b id="google">Sign in</b></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="top" id="top">
+                <h2>Lebenslauf</h2>
+                <span class="app-description">Hier kannst Du deinen Lebenslauf automatisiert erstellen:</span>
+            </div>
+    
+            <div class="middle">
+                <img src="../cvTemplates//screenshots/first_cv.png" alt="preview" id="preview">
+                <ul class="buttons">
+                    <a class="btn btn1" id="choose-cv">Vorlage wählen</a>
+                    <a class="btn btn1" id="create-btn">Lebenslauf erstellen</a>
+                </ul>
+            </div>
+    
+            <!--Das Popup, in welchem das gewünschte Template gwählt werden kann!-->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" id="close-div">&times;</div>
+                <img onclick="toggleActive(this)" src="../cvTemplates/screenshots/first_cv.png" class="active-cv" id="first_cv">
+                <img onclick="toggleActive(this)" src="../cvTemplates/screenshots/second_cv.png" id="second_cv">
+                <a class="btn btn1" id="end-popup" onclick="chooseTemplate()">Fertig</a>
+            </div>
+        </section>
+        
+        <div class="top" id="top1">
+            <h2>Bewerbungsschreiben</h2>
+            <span class="app-description">Hier kannst Du dein Bewerbungsschreiben automatisiert erstellen. Gib dazu Informationen zum Empfäger an und wie formal das Schreiben formuliert sein soll:</span>
+        <div class="container" id="container1">
+            <form id="form" action="#" class="formclass">
+                <fieldset id="fieldset" class="fieldsetclass" enabled>
+                <div class="job">
+                    <ul class="job-area">
+                        <li>
+                        <div class="details" id="headings"><label for="gen">Formalität</label></div>
+                        <select name="gen" id="job-field" required class="jobtype">
+                          <option value="formal">formal</option>
+                          <option value="neutral">neutral</option>
+                          <option value="informal">informal</option>
+                        </select> 
+                        </li>
+                    </ul> 
+                </div>
+            <div class="title" id="application">Empfänger</div>
+                <div class="input-box">
+                    <span class="details" id="headings">Stellenbezeichnung</span>
+                    <input type="text" id="job" class="jobtype" placeholder="z.B. Marketing Manager"> 
+                </div>
+                <div class="input-box" id="names">
+                    <span class="details" id="headings">Empfänger</span>
+                    <input type="text" placeholder="Nachname" id="addressee" class="jobtype">
+                    <input type="text" placeholder="Vorname" id="addressee_givenname" class="jobtype">
+                </div>
+                <div class="input-box">
+                    <span class="details" id="headings">Firma</span>
+                    <input type="text" id="company" class="jobtype" placeholder="Beispielfirma">
+                </div>
+                <div class="input-box">
+                    <span class="details" id="headings">Firmenadresse</span>
+                    <input type="text" placeholder="Straße" id="jobaddress" class="address jobtype">
+                    <input type="text" placeholder="Postleitzahl" id="postalcode" class="address jobtype">
+                    <input type="text" placeholder="Ort" id="place" class="address jobtype">
+                </div>  
+        </div>
+
+        <div class="middle">
+            <ul class="buttons">
+                <a class="btn btn1" id="create-ap">Bewerbungsschreiben erstellen</a>
+        </div>  
+    </main>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--<script type="module" src="resources/js/index.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.22.5/docxtemplater.js"></script>
+   <script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+   <script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip-utils.js"></script>
+   <script type="module" src="../js/coverLetter.js"></script>
+   <script type="module" src="../js/cv.js"></script>
+   <script src="../js/template.js"></script>
+   <script type="module" src="../js/createWord.js"></script>
+   <script type="module" src="../js/firebaseConnection.js"></script>
+   <script type="module" src="../js/GoogleSignIn.js"></script>
+</body>
+
+</html>
